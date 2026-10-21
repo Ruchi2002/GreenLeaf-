@@ -1,5 +1,5 @@
 {
   "installCommand": "npx pnpm@9 install --dir ../.. ",
-  "buildCommand": "npx pnpm@9 --filter portal build --prefix ../.. ",
+  "buildCommand": "cd ../.. && npx pnpm@9 --filter portal build",
   "outputDirectory": ".next"
 }

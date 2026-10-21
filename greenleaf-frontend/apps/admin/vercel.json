@@ -1,5 +1,5 @@
 {
   "installCommand": "npx pnpm@9 install --dir ../.. ",
-  "buildCommand": "npx pnpm@9 --filter admin build --prefix ../.. ",
+  "buildCommand": "cd ../.. && npx pnpm@9 --filter admin build",
   "outputDirectory": ".next"
 }

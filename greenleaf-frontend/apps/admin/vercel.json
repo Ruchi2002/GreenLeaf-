@@ -1,5 +1,5 @@
 {
-  "installCommand": "npm install -g pnpm@9 && cd ../.. && pnpm install",
-  "buildCommand": "cd ../.. && pnpm --filter admin build",
+  "installCommand": "npx pnpm@9 install --dir ../.. ",
+  "buildCommand": "npx pnpm@9 --filter admin build --prefix ../.. ",
   "outputDirectory": ".next"
 }

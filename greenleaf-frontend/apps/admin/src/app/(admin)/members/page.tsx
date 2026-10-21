@@ -4,11 +4,11 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Search, SlidersHorizontal, Users, UserCheck, UseRPlus, Clock } from 'lucide-react';
+import { Search, SlidersHorizontal, Users, UserCheck, UserPlus, Clock } from 'lucide-react';
 import { memberStats, adminMembers, type MemberTier, type MemberStatus } from '@/data/mock/adminMembers';
 import { cn } from '@/lib/utils';
 
-const ICON_MAP: Record<string, React.ElementType> = { Users, UserCheck, UseRPlus, Clock };
+const ICON_MAP: Record<string, React.ElementType> = { Users, UserCheck, UserPlus, Clock };
 
 const TIER_AVATAR: Record<MemberTier, string> = {
   Diamond: 'bg-cyan-500',

@@ -2,12 +2,12 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutGrid, Gift, UseRPlus, ShieldCheck } from 'lucide-react';
+import { LayoutGrid, Gift, UserPlus, ShieldCheck } from 'lucide-react';
 
 const NAV = [
   { label: 'General',      href: '/settings/general',      icon: LayoutGrid  },
   { label: 'Bonus Config', href: '/settings/bonus',        icon: Gift        },
-  { label: 'Registration', href: '/settings/registration', icon: UseRPlus    },
+  { label: 'Registration', href: '/settings/registration', icon: UserPlus    },
   { label: 'Security',     href: '/settings/security',     icon: ShieldCheck },
 ];
 

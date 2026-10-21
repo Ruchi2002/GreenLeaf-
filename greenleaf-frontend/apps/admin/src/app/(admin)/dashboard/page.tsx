@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import {
   Users, TrendingUp, ShoppingCart, Banknote,
-  UseRPlus, Wallet, Megaphone, FileBarChart, ShieldCheck, ClipboardList,
+  UserPlus, Wallet, Megaphone, FileBarChart, ShieldCheck, ClipboardList,
 } from 'lucide-react';
 import {
   dashboardStats, revenueData, tierData, recentOrders, quickActions,
@@ -11,7 +11,7 @@ import {
 
 const ICON_MAP: Record<string, React.ElementType> = {
   Users, TrendingUp, ShoppingCart, Banknote,
-  UseRPlus, Wallet, Megaphone, FileBarChart, ShieldCheck, ClipboardList,
+  UserPlus, Wallet, Megaphone, FileBarChart, ShieldCheck, ClipboardList,
 };
 
 const STATUS_STYLES: Record<string, string> = {

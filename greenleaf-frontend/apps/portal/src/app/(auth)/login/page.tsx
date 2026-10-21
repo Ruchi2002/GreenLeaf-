@@ -12,7 +12,6 @@ import { AuthLeftPanel } from '@/components/layout/AuthLeftPanel';
 const MOCK_CREDENTIALS = [
   { id: 'member@greenleaf.com', password: 'Member@123', role: 'member' as const },
   { id: 'sc@greenleaf.com',     password: 'SC@123',     role: 'sc'     as const },
-  { id: 'admin@greenleaf.com',  password: 'Admin@123',  role: 'admin'  as const },
 ];
 
 export default function LoginPage() {
@@ -49,13 +48,9 @@ export default function LoginPage() {
       setError('Invalid ID or password');
       return;
     }
-    if (match.role === 'admin') {
-      window.location.href = 'http://localhost:3001/dashboard';
-    } else {
-      // MOCK ONLY — BACKEND_REQUIRED_LATER
-      localStorage.setItem('gl-role', match.role);
-      router.push(match.role === 'sc' ? '/sc/dashboard' : '/dashboard');
-    }
+    // MOCK ONLY — BACKEND_REQUIRED_LATER
+    localStorage.setItem('gl-role', match.role);
+    router.push(match.role === 'sc' ? '/sc/dashboard' : '/dashboard');
   }
 
   return (
@@ -181,7 +176,6 @@ export default function LoginPage() {
               <p className="text-[11px] font-bold text-text-muted uppercase tracking-widest mb-2">Demo credentials</p>
               <p className="text-xs text-text-muted font-mono">Member: member@greenleaf.com / Member@123</p>
               <p className="text-xs text-text-muted font-mono mt-1">SC: &nbsp;&nbsp;&nbsp;&nbsp;sc@greenleaf.com / SC@123</p>
-              <p className="text-xs text-text-muted font-mono mt-1">Admin: &nbsp;admin@greenleaf.com / Admin@123</p>
             </div>
 
             <p className="mt-4 text-center text-xs text-text-muted">
